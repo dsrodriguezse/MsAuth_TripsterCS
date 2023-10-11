@@ -4,6 +4,6 @@ namespace MsAuth_Tripster.Services
 {
     public interface IAuthorizationService
     {
-        Task<AuthorizationResponse> DevolverToken(AuthorizationRequest authorization)
+        Task<AuthorizationResponse> DevolverToken(AuthorizationRequest authorization);
     }
 }
