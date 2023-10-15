@@ -26,7 +26,12 @@ namespace MsAuth_Tripster
         }
         public MySqlConnection getConexion()
         {
-
+            if(conexion == null)
+            {
+                conexion = new MySqlConnection(cadenaConexion);
+                conexion.Open();
+            }
+            return conexion;
         }
     }
 }
